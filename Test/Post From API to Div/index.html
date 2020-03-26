@@ -9,8 +9,9 @@
     <meta name="author" content="" />
     <title>Weather</title>
     <link href="css/styles.css" rel="stylesheet" />
-    <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
-        crossorigin="anonymous" />
+    <!-- <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
+        crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
         crossorigin="anonymous"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -20,50 +21,16 @@
 <body class="sb-nav-fixed">
     <!-- Navbar-->
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-        <a class="navbar-brand">Search Options:</a><button class="btn btn-link btn-sm order-1 order-lg-0"
-            id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+        <a class="navbar">Search Options:</a>
+                        <button class="btn btn-primary" type="button" id="searchMovie"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+
     </nav>
     <!-- Sidebar-->
     <div id="layoutSidenav">
         <div id="layoutSidenav_nav">
-            <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-                <div class="sb-sidenav-menu">
-                    <div class="nav">
-                        <!-- Sidebar Search-->
-                        <br>
-                        <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-                            <div class="input-group">
-                                <input class="form-control" type="text" placeholder="Search weather..."
-                                    aria-label="Search" aria-describedby="basic-addon2" />
-                                <div class="input-group-append">
-                                    <button class="btn btn-primary" type="button" id="searchWeather"><i class="fas fa-search"></i></button>
-                                </div>
-                            </div>
-                        </form>
-
-                        <!-- Sidebar-->
-                        <div class="sb-sidenav-menu-heading">
-                            <h5>Search History:</h5>
-                        </div>
-                        <div class="searchHistory"></div>
-
-                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
-                            data-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="layout-static.html">Static
-                                    Navigation</a><a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
-                            </nav>
-                        </div>
-                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                            aria-expanded="false" aria-controls="collapsePages">
-
-                        </a>
-                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo"
-                            data-parent="#sidenavAccordion">
-                        </div>
-
-                    </div>
-
-            </nav>
         </div>
         <div id="layoutSidenav_content">
             <main>
@@ -77,35 +44,6 @@
                         <div id="weather-view"></div>
                     </div>
                     <br><br>
-                    <div class="row">
-                        <h2>5 Day Forecast:</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="card bg-primary text-white mb-4">
-                                <div class="card-body" id="day1">Primary Card</div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card bg-primary text-white mb-4">
-                                <div class="card-body" id="day2">Warning Card</div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card bg-primary text-white mb-4">
-                                <div class="card-body" id="day3">Success Card</div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card bg-primary text-white mb-4">
-                                <div class="card-body" id="day4">Danger Card</div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card bg-primary text-white mb-4">
-                                <div class="card-body" id ="day5">Danger Card</div>
-                            </div>
-                        </div>
             </main>
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid">
