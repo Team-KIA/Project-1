@@ -10,19 +10,21 @@
     <title>Weather</title>
     <!--link href="css/styles.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="./css/movieStyle.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
         crossorigin="anonymous"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
 </head>
 
-<body class="sb-nav-fixed class="uk-background-cover uk-background-fixed" data-src="./images/theatreImage.jpg" uk-img">
-               <nav class="uk-navbar-container uk-margin" uk-navbar>
+<body class="sb-nav-fixed uk-background-secondary">
+               <nav class="uk-navbar-container uk-margin uk-navbar">
                 <div class="uk-navbar-left">
             
                     <div class="uk-navbar-left"><div>
                     </div></div>
                     <a class="uk-navbar-item uk-logo" href="#">View Movies!</a>
+                    <!--Fire ShowMovie Function-->
                     <button class="uk-button uk-button-primary" type="button" id="searchMovie"><i class="fas fa-search"></i></button>
                     </div></div>
             
@@ -39,6 +41,9 @@
                     <div class="row">
                         <!--Current weather will Get Dumped Here -->
                         <div id="movie-view"></div>
+                        <div id= "movie-pic">
+                            <img src="./images/theatreImage.jpg" class="img" alt="Smiley face" height="1000" width="1000">
+                        </div>
                     </div>
                     <br><br>
         </main>

@@ -22,11 +22,24 @@ $("#searchMovie").one("click", function displayMovieInfo() {
       var title = response.results[i].title;
 
       // Creating an element to have title displayed
-      var pOne = $("<p>").text("Title: " + title);
+      var pOne = $("<h2>").text("Title: " + title);
       console.log(pOne)
 
       // Displaying the rating
       movieDiv.append(pOne);
+
+      // Retrieving the URL for the image
+      var imgURL = ["https://fmovies.cc/wp-content/uploads/2020/03/8WUVHemHFH2ZIP6NWkwlHWsyrEL.jpg","https://rkimovies.net/wp-content/uploads/2020/03/4U7hpTK0XTQBKT5X60bKmJd05ha.jpg","https://image.tmdb.org/t/p/original/g0c40ySJ1zW8dVwuCETgJcl3q7c.jpg"];
+      //var imgURL = "https://rkimovies.net/wp-content/uploads/2020/03/4U7hpTK0XTQBKT5X60bKmJd05ha.jpg";
+      //var imgURL = "https://image.tmdb.org/t/p/original/g0c40ySJ1zW8dVwuCETgJcl3q7c.jpg";
+
+      // Creating an element to hold the image
+      var image = $("<img>").attr("src", imgURL[i]);
+
+      //$(image).addClass( "img" );
+
+      // Appending the image
+      movieDiv.append(image);
 
       //Storing the release date
       var releaseDate = response.results[i].release_date;
@@ -56,21 +69,21 @@ $("#searchMovie").one("click", function displayMovieInfo() {
       movieDiv.append(pFour);
 
 
-      // Retrieving the URL for the image
-      var imgURL = ["https://fmovies.cc/wp-content/uploads/2020/03/8WUVHemHFH2ZIP6NWkwlHWsyrEL.jpg","https://rkimovies.net/wp-content/uploads/2020/03/4U7hpTK0XTQBKT5X60bKmJd05ha.jpg","https://image.tmdb.org/t/p/original/g0c40ySJ1zW8dVwuCETgJcl3q7c.jpg"];
-      //var imgURL = "https://rkimovies.net/wp-content/uploads/2020/03/4U7hpTK0XTQBKT5X60bKmJd05ha.jpg";
-      //var imgURL = "https://image.tmdb.org/t/p/original/g0c40ySJ1zW8dVwuCETgJcl3q7c.jpg";
+      // // Retrieving the URL for the image
+      // var imgURL = ["https://fmovies.cc/wp-content/uploads/2020/03/8WUVHemHFH2ZIP6NWkwlHWsyrEL.jpg","https://rkimovies.net/wp-content/uploads/2020/03/4U7hpTK0XTQBKT5X60bKmJd05ha.jpg","https://image.tmdb.org/t/p/original/g0c40ySJ1zW8dVwuCETgJcl3q7c.jpg"];
+      // //var imgURL = "https://rkimovies.net/wp-content/uploads/2020/03/4U7hpTK0XTQBKT5X60bKmJd05ha.jpg";
+      // //var imgURL = "https://image.tmdb.org/t/p/original/g0c40ySJ1zW8dVwuCETgJcl3q7c.jpg";
 
-      // Creating an element to hold the image
-      var image = $("<img>").attr("src", imgURL[i]);
+      // // Creating an element to hold the image
+      // var image = $("<img>").attr("src", imgURL[i]);
 
-      // Appending the image
-      movieDiv.append(image);
+      // // Appending the image
+      // movieDiv.append(image);
 
       // Putting the entire movie above the previous movies
       $("#movie-view").prepend(movieDiv);
     }
-
+    $( ".img" ).remove();
 
   })
 
