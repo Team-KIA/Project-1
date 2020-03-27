@@ -112,3 +112,29 @@ h1 {
       border-top: 0px;
   }
 
+  .container1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.container1 > div{
+max-width: 500px;
+margin: auto;
+}
+
+p{
+    text-align: center;
+}
+
+.Rest-Info{
+    background-color: lightgrey ;
+}
+
+.uk-card-body{
+    font-weight: bolder;
+    color: black;
+}
+
