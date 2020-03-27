@@ -7,48 +7,33 @@
     <link rel="stylesheet" href="css/uikit.min.css"/>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-<div class = "container">
-    <div class = "jumbotron">
+    <header></header>
         <h1>Manhattan's best food spots based on locality</h1>
-    </div>  
     
-<!-- <div class="uk-button-group">
-    <button class="uk-button uk-button-default">Select</button>
-    <div class="uk-inline">
-        <button class="uk-button uk-button-default" type="button"><span uk-icon="icon:  triangle-down"></span></button>
-        <div uk-dropdown="mode: click; boundary: ! .uk-button-group; boundary-align: true;">
-            <ul class="uk-nav uk-dropdown-nav">
-                <li id="east-village">East Village</li>
-                <li id="soho"><a href="#">Soho</a></li>
-                <li id="upper-east-side"><a href="#">Upper East Side</a></li>
-                <li id="lower-east-side"><a href="#">Lower East Side</a></li>
-                <li id="greenwich-village"><a href="#">Greenwich Village</a></li>
-                <li id= "flatiron"><a href="#">Flatiron District</a></li>
-                <li id="hells-kitchen"><a href="#">Hell's Kitchen</a></li>
-                <li id="chelsea"><a href="#">Chelsea</a></li>
-                <li id="midtown"><a href="#">Midtown</a></li>
-            </ul>
-        </div>
-    </div>
-</div> -->
+    <br></br>
+    
+<div class = "container"> 
+
  <p uk-margin>
-    <button class="uk-button uk-button-primary" id="east-village">East Village</button>
-    <button class="uk-button uk-button-secondary" id="soho">Soho</button>
-    <button class="uk-button uk-button-danger" id="upper-east-side">Upper East Side</button>
-    <button class="uk-button uk-button-primary" id="lower-east-side">Lower East Side</button>
-    <button class="uk-button uk-button-secondary" id="greenwich-village">Greenwich Village</button>
-    <button class="uk-button uk-button-danger" id="flatiron">Flatiron District</button>
-    <button class="uk-button uk-button-primary" id="hells-kitchen">Hell's Kitchen</button>
-    <button class="uk-button uk-button-secondary" id="chelsea">Chelsea</button>
-    <button class="uk-button uk-button-danger" id="midtown">Midtown</button>
+    <button class="uk-button uk-button-primary" data-rest="East Village">East Village</button>
+    <button class="uk-button uk-button-secondary" data-rest="Soho">Soho</button>
+    <button class="uk-button uk-button-danger" data-rest="Upper East Side">Upper East Side</button>
+    <button class="uk-button uk-button-primary" data-rest="Lower East Side">Lower East Side</button>
+    <button class="uk-button uk-button-secondary" data-rest="Greenwich Village">Greenwich Village</button>
+    <button class="uk-button uk-button-danger" data-rest="Flatiron">Flatiron District</button>
+    <button class="uk-button uk-button-primary" data-rest="Hell's Kitchen">Hell's Kitchen</button>
+    <button class="uk-button uk-button-secondary" data-rest="Chelsea">Chelsea</button>
+    <button class="uk-button uk-button-danger" data-rest="Midtown">Midtown</button>
 </p> 
 
-<button id='soho' class="uk-button" latitude="40.7248472222" longitude="-73.9987416667"></button>
 
 </div>
+<br></br>
+<footer></footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="dinner.js"></script>
 </body>
