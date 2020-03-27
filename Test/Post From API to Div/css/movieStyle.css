@@ -1,5 +1,4 @@
-body {
-    background: url(./images/theatreImage.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body, h1 {
+    
+    color: white;
 }
