@@ -138,3 +138,10 @@ p{
     color: black;
 }
 
+.ianDiv, h1, h2 {
+    color: white;
+}
+
+.movieInfo {
+    width: 60%;
+}
