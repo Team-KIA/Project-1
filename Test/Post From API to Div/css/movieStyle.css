@@ -1,5 +1,7 @@
-body {
-    background: url(./images/theatreImage.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.ianDiv, h1, h2 {
+    color: white;
+}
+
+.movieInfo {
+    width: 60%;
 }

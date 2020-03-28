@@ -138,8 +138,12 @@ p{
     color: black;
 }
 
-.ianDiv, h1, h2 {
+.ianDiv, h2 {
     color: white;
+}
+
+h1{
+ color: blue;
 }
 
 .movieInfo {
